@@ -31,3 +31,9 @@ NOTE: If you use zShell, like I do (highly reccomended!) Run the following inste
 echo "source /opt/ros/kinetic/setup.zsh" >> ~/.zshrc
 source ~/.zshrc
 ```
+Make a new ROS workspace:
+```
+mkdir -p ~/iarc7/src
+cd ~/iarc7/
+catkin_make
+```
