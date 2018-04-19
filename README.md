@@ -37,3 +37,13 @@ mkdir -p ~/iarc7/src
 cd ~/iarc7/
 catkin_make
 ```
+Source the new setup files (or below for zshell):
+```
+echo "source ~/iarc7/devel/setup.bash" >> ~/.bashrc
+source ~/.bashrc;
+```
+OR for zshell, 
+```
+echo "source ~/iarc7/devel/setup.zsh" >> ~/.zshrc
+source ~/.zshrc;
+```
