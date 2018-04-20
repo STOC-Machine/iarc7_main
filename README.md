@@ -23,27 +23,31 @@ Respond `y` to the prompt. This will take about 10+ minutes.
 
 run the following to add ROS environment variables on startup:
 ```
-echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc 
+echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc && \
 source ~/.bashrc
 ```
-NOTE: If you use zShell, like I do (highly reccomended!) Run the following instead. If you don't know what I'm talking about, ignore this and run the lines above.
+NOTE: If you use zShell, like I do, run the following instead. If you don't know what I'm talking about, ignore this and run the lines above.
 ```
-echo "source /opt/ros/kinetic/setup.zsh" >> ~/.zshrc
+echo "source /opt/ros/kinetic/setup.zsh" >> ~/.zshrc && \
 source ~/.zshrc
 ```
 Make a new ROS workspace:
 ```
-mkdir -p ~/iarc7/src
-cd ~/iarc7/
+mkdir -p ~/iarc7/src && \
+cd ~/iarc7/ && \
 catkin_make
 ```
 Source the new setup files (or below for zshell):
 ```
-echo "source ~/iarc7/devel/setup.bash" >> ~/.bashrc
+echo "source ~/iarc7/devel/setup.bash" >> ~/.bashrc && \
 source ~/.bashrc;
 ```
 OR for zshell, 
 ```
-echo "source ~/iarc7/devel/setup.zsh" >> ~/.zshrc
+echo "source ~/iarc7/devel/setup.zsh" >> ~/.zshrc && \
 source ~/.zshrc;
+```
+Clone (install) our repo!
+```
+git clone https://github.com/STOC-Machine/iarc7_main.git
 ```
