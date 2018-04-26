@@ -47,7 +47,13 @@ OR for zshell,
 echo "source ~/iarc7/devel/setup.zsh" >> ~/.zshrc && \
 source ~/.zshrc;
 ```
-Clone (install) our repo!
+Clone (install) our repo (inside the src directory)!
 ```
+cd src && \
 git clone https://github.com/STOC-Machine/iarc7_main.git
+```
+Go back to the `iarc7` directory, and build the project using the same catkin_make command:
+```
+cd .. && \
+catkin_make
 ```
